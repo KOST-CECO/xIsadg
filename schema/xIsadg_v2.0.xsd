@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.0">
-	<!--xIsadg_v2.0.f-->
+	<!--xIsadg_v2.0.g-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
@@ -853,10 +853,22 @@
 	</xs:complexType>
 	<xs:complexType name="propertyType" mixed="true">
 		<xs:sequence>
-			<xs:element name="property" type="isad:propertyType" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="property" type="isad:propertyValue" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="origin" type="xs:string" use="optional"/>
-		<xs:attribute name="key" use="optional"/>
+	</xs:complexType>
+	<xs:complexType name="propertyValue" mixed="true">
+		<xs:sequence>
+			<xs:element name="property" type="isad:propertyKeyValue" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="key" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="propertyKeyValue">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="key" type="xs:string" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
 	</xs:complexType>
 	<xs:complexType name="xmlDataType">
 		<xs:sequence>
