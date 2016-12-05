@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.0">
-	<!--xIsadg_v2.0 (minor version h)-->
+	<!--xIsadg_v2.0 (minor version i)-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
@@ -103,7 +103,7 @@
 		<xs:sequence>
 			<xs:element ref="isad:referenceCode"/>
 			<xs:element ref="isad:title" maxOccurs="unbounded"/>
-			<xs:element ref="isad:dates" minOccurs="0"/>
+			<xs:element ref="isad:dates" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element ref="isad:descriptionLevel"/>
 			<xs:element ref="isad:extentMedium" minOccurs="0"/>
 		</xs:sequence>
@@ -593,25 +593,19 @@
 		<xs:annotation>
 			<xs:documentation>Entstehungszeitraum / Laufzeit: Identifizierung des Entstehungsdatums bzw. -zeitraums der in der Verzeichnungseinheit enthaltenen Unterlagen</xs:documentation>
 		</xs:annotation>
-		<xs:sequence>
-			<xs:element name="date" maxOccurs="unbounded">
-				<xs:complexType>
-					<xs:choice>
-						<xs:sequence>
-							<xs:element name="fromDate" type="isad:dateType"/>
-							<xs:element name="toDate" type="isad:dateType"/>
-							<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
-						</xs:sequence>
-						<xs:sequence>
-							<xs:element name="pointofTime" type="isad:dateType"/>
-							<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
-						</xs:sequence>
-					</xs:choice>
-					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
-					<xs:attribute name="origin" type="xs:string" use="optional"/>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
+		<xs:choice>
+			<xs:sequence>
+				<xs:element name="fromDate" type="isad:dateType"/>
+				<xs:element name="toDate" type="isad:dateType"/>
+				<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+			<xs:sequence>
+				<xs:element name="pointofTime" type="isad:dateType"/>
+				<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+		</xs:choice>
+		<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+		<xs:attribute name="origin" type="xs:string" use="optional"/>
 		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.3"/>
 	</xs:complexType>
 	<xs:complexType name="dateType">
