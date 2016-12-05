@@ -5,33 +5,33 @@
 		<isad:title isadId="1.2" obligation="mandatory" origin="String">a</isad:title>
 		<isad:dates isadId="1.3">
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:fromDate>1967</isad:fromDate>
+				<isad:fromDate circa="true">1967</isad:fromDate>
 				<isad:toDate>1967-08-13</isad:toDate>
 				<isad:commentDate>Tralala</isad:commentDate>
 			</isad:date>
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:instantDate>unknown</isad:instantDate>
+				<isad:pointofTime>unknown</isad:pointofTime>
 			</isad:date>
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:instantDate>10</isad:instantDate>
+				<isad:pointofTime circa="true">10</isad:pointofTime>
 			</isad:date>
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:instantDate>2002</isad:instantDate>
+				<isad:pointofTime>2002</isad:pointofTime>
 			</isad:date>
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:instantDate>2002-05</isad:instantDate>
+				<isad:pointofTime>2002-05</isad:pointofTime>
 			</isad:date>
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:instantDate>1967-08-13</isad:instantDate>
+				<isad:pointofTime>1967-08-13</isad:pointofTime>
 			</isad:date>
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:instantDate>2002-05-30T09:00</isad:instantDate>
+				<isad:pointofTime>2002-05-30T09:00</isad:pointofTime>
 			</isad:date>
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:instantDate>2002-05-30T09:00:00</isad:instantDate>
+				<isad:pointofTime>2002-05-30T09:00:00</isad:pointofTime>
 			</isad:date>
 			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
-				<isad:instantDate>2002-05-30T09:00:00.100</isad:instantDate>
+				<isad:pointofTime>2002-05-30T09:00:00.100</isad:pointofTime>
 			</isad:date>
 		</isad:dates>
 		<isad:descriptionLevel isadId="1.4" obligation="mandatory" origin="ingest">Teilserie</isad:descriptionLevel>
