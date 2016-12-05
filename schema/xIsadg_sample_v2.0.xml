@@ -3,9 +3,15 @@
 	<isad:identity isadId="1">
 		<isad:referenceCode isadId="1.1" obligation="inherited" origin="archival">a</isad:referenceCode>
 		<isad:title isadId="1.2" obligation="mandatory" origin="String">a</isad:title>
-		<isad:dates isadId="1.3" obligation="aggregated" origin="String">
-			<isad:fromDate>1967-08-13</isad:fromDate>
-			<isad:toDate>1967-08-13</isad:toDate>
+		<isad:dates isadId="1.3">
+			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
+				<isad:fromDate>1967-08-13</isad:fromDate>
+				<isad:toDate>1967-08-13</isad:toDate>
+				<isad:commentDate>Tralala</isad:commentDate>
+			</isad:date>
+			<isad:date origin="//arelda:Dossier/arelda:Entstehungszeitraum">
+				<isad:instantDate>1967-08-13</isad:instantDate>
+			</isad:date>
 		</isad:dates>
 		<isad:descriptionLevel isadId="1.4" obligation="mandatory" origin="ingest">Teilserie</isad:descriptionLevel>
 		<isad:extentMedium isadId="1.5">

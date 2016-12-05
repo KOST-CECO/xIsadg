@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.0">
-	<!--xIsadg_v2.0.c-->
+	<!--xIsadg_v2.0.d-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
@@ -587,19 +587,26 @@
 	</xs:element>
 	<!--complexType decclarations of ISAD(G) elements -->
 	<xs:complexType name="datesType">
-		<xs:choice>
-			<xs:sequence>
-				<xs:element name="fromDate" type="xs:date"/>
-				<xs:element name="toDate" type="xs:date"/>
-			</xs:sequence>
-			<xs:sequence>
-				<xs:element name="fromYear" type="xs:gYear"/>
-				<xs:element name="toYear" type="xs:gYear"/>
-			</xs:sequence>
-		</xs:choice>
+		<xs:sequence>
+			<xs:element name="date" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:choice>
+						<xs:sequence>
+							<xs:element name="fromDate" type="xs:date"/>
+							<xs:element name="toDate" type="xs:date"/>
+							<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+						<xs:sequence>
+							<xs:element name="instantDate" type="xs:date"/>
+							<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+					</xs:choice>
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
 		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.3"/>
-		<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
-		<xs:attribute name="origin" type="xs:string" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="extentMediumType">
 		<xs:sequence>
