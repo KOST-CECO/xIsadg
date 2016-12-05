@@ -65,11 +65,31 @@
 		<isad:primaryDataLocator uri="String" obligation="optional" origin="String">a</isad:primaryDataLocator>
 	</isad:additionalReference>
 	<isad:additionalData>
-		<isad:mdWrap obligation="optional" origin="String">
-			<isad:property origin="String" key="text">
-				<isad:value>text</isad:value>
+		<isad:mdWrap>
+			<isad:property origin="//arelda:Paket/arelda:Pakettyp">SIP</isad:property>
+			<isad:property origin="//arelda:Paket/arelda:Schemaversion">4.0</isad:property>
+			<isad:property origin="//arelda:Paket/arelda:Zusatzdaten">
+				<isad:property origin="//arelda:Paket/arelda:Zusatzdaten" key="#01_zusatzDaten_key">#02_zusatzDatenValue </isad:property>
+				<isad:property origin="//arelda:Paket/arelda:Zusatzdaten" key="#01_zusatzDaten_key2">#02_zusatzDatenValue2</isad:property>
+			</isad:property>
+			<isad:property origin="//arelda:Ablieferung/arelda:Ablieferungsnummer">#14_ablieferungsnummer</isad:property>
+			<isad:property origin="//arelda:Ablieferung/arelda:Ablieferungstyp">GEVER (inkl. Felder für FILES)</isad:property>
+			<isad:property origin="//arelda:Ablieferung/arelda:Angebotsnummer">#15_angebotsnummer</isad:property>
+			<isad:property origin="//arelda:Ablieferung/arelda:Zusatzdaten">
+				<isad:property key="#12_zusatzDatenKey">#13_zusatzDatenValue</isad:property>
+				<isad:property key="#12_zusatzDatenKey2">#13_zusatzDatenValue2</isad:property>
+			</isad:property>
+			<isad:property origin="//arelda:Provenienz/arelda:Systemname">#20_systemName</isad:property>
+			<isad:property origin="//arelda:Provenienz/arelda:Systembeschreibung">#21_systemBeschreibung</isad:property>
+			<isad:property origin="//arelda:Provenienz/arelda:VerwandteSysteme">xyz</isad:property>
+			<isad:property origin="//arelda:Provenienz/arelda:ArchivierungsmodusLoeschvorschriften">xyz</isad:property>
+			<isad:property origin="//arelda:Provenienz/arelda:Registratur">#24_registratur</isad:property>
+			<isad:property origin="//arelda:OrdnungssystemGeneration">#25_generation</isad:property>
+			<isad:property origin="//arelda:OrdnungssystemMitbenutzung">#26_mitbenutzung</isad:property>
+			<isad:property origin="//arelda:OrdnungsSystem/arelda:Zusatzdaten">
+				<isad:property key="#28_zusatzDatenKey">#29_zusatzDatenValue</isad:property>
+				<isad:property key="#28_zusatzDatenKey2">#29_zusatzDatenValue2</isad:property>
 			</isad:property>
 		</isad:mdWrap>
-		<isad:xmlData mdtype="MARC" obligation="optional" origin="String"/>
 	</isad:additionalData>
 </isad:archivalDescription>
