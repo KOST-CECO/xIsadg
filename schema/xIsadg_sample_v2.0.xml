@@ -66,7 +66,7 @@
 		</isad:accessConditions>
 		<isad:reproConditions isadId="4.2" obligation="optional" origin="String">a</isad:reproConditions>
 		<isad:languageScripts isadId="4.3" obligation="optional" origin="String">a</isad:languageScripts>
-		<isad:physTech isadId="4.4" obligation="aggregated" origin="String">not_defined</isad:physTech>
+		<isad:physTech isadId="4.4" obligation="aggregated" origin="String">freitext</isad:physTech>
 		<isad:findingAids isadId="4.5" obligation="optional" origin="String">a</isad:findingAids>
 	</isad:conditionsAccessUse>
 	<isad:alliedMaterials isadId="5">

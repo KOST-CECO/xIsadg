@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.0">
-	<!--xIsadg_v2.0 (minor version j)-->
+	<!--xIsadg_v2.0 (minor version k)-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
@@ -976,11 +976,19 @@ Einzelstücke und die nicht aufgrund des Titels zu erwarten sind.</xs:documentat
 			<xs:documentation xml:lang="de">Liste der möglichen Werte im Element physikalische Beschaffenheit und technische Anforderungen</xs:documentation>
 			<xs:documentation xml:lang="de">level: enumeration</xs:documentation>
 		</xs:annotation>
+		<xs:union memberTypes="isad:formTypeEnumeration isad:formTypeString"/>
+	</xs:simpleType>
+	<xs:simpleType name="formTypeEnumeration">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="digital"/>
 			<xs:enumeration value="analog"/>
 			<xs:enumeration value="hybrid"/>
 			<xs:enumeration value="not_defined"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="formTypeString">
+		<xs:restriction base="xs:string">
+			<xs:pattern value=".*"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="levelType">
