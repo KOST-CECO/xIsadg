@@ -1,0 +1,62 @@
+
+xIsadg_v2+unbound -> xIsadg_v2.0.a (enthält source Attribut, Elemente können "unbound" wiederholt werden)
+---------------------------------------------------------------------------------------------------------
+
+Protokoll No 5
+--------------
+xIsadg_v2.0.b: Attribut "source" umbenannt zu "origin" und Attribut archivalOrigin gelöscht 
+               Attribut "origin" fixed="archival" bei referenceCode & archivistsNote & aipReference
+               Attribut "origin" default="ingest" bei descriptionLevel & descriptionDates
+
+Protokoll No 6
+--------------
+xIsadg_v2.0.c:/additionalData/mdWrap/property angepasst
+
+xIsadg_v2.0.d: /dates/date/fromDate+toDate+CommentDate
+               /dates/date/instantDate+CommentDate
+
+xIsadg_v2.0.e: unknown
+               CC (Century)
+               YYYY
+               YYYY-MM
+               YYYY-MM-DD
+               YYYY-MM-DDThh:mm
+               YYYY-MM- DDThh:mm:ss
+               YYYY-MM- DDThh:mm:ss.mis (Milisekunde)
+
+
+Protokoll No 7
+--------------
+xIsadg_v2.0.f: "circa" Attribut auf Ebene fromDate+toDate+pointofTime
+               <xs:attribute name="circa" type="xs:boolean" use="optional" default="false"/>				
+               pointofTime statt instantDate
+
+xIsadg_v2.0.g: /additionalData/mdWrap/property "origine" -> property "key" -> property "key" 
+
+xIsadg_v2.0.h: Anpassungen: "origin" und Wiederholbarkeit nach xIsadg-Schema_2016-10-31.xlsx
+
+
+Protokoll No 8
+--------------
+xIsadg_v2.0.i: auf die zusätzlich Stufe isad:date wird verzichtet und die verschiedenen Datumsangaben 
+               im bestehenden Element isad:dates geführt (= Rückwärtskompatibilität)
+
+xIsadg_v2.0.i: auf eine Verschiebung des Elementes isad:recordReference in isad:arrangement wird verzichtet
+
+
+xIsadg_v2.0.j: isad:scope: „text, image, audio, video, structured_data, hybrid“  und Freitext 
+
+
+Protokoll No 9
+--------------
+xIsadg_v2.0.k: isad:physTech
+
+
+Final Version 2.0
+-----------------
+xIsadg_v2.0:   "xIsadg_v2.0: Konsolidierung, Erweiterung und Integration aller Änderungen seit Version 1.6 
+               im Rahmen der Arbeitsgruppe Mapping-Workshop  (Stadtarchiv Zürich und Staatsarchive Appenzell Ausserrhoden, 
+               Basel-Stadt, Bern, Luzern, St.Gallen und Thurgau)"
+
+
+
