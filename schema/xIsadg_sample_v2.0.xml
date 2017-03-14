@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 rel. 2 (http://www.altova.com) by Thomas Bula (Bundesamt für Informatik und Telekommunikation) -->
 <isad:archivalDescription xsi:schemaLocation="ISADG xIsadg_v2.0.xsd" xmlns:isad="ISADG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<isad:identity isadId="1">
 		<isad:referenceCode isadId="1.1" obligation="inherited" origin="archival">a</isad:referenceCode>
@@ -48,7 +49,7 @@
 	</isad:context>
 	<isad:contentStructure isadId="3">
 		<isad:scopeContent isadId="3.1">
-			<isad:scope obligation="aggregated" origin="String">video</isad:scope>
+			<isad:scope obligation="aggregated" origin="String">freitext</isad:scope>
 			<isad:content obligation="aggregated" origin="String" contentQualifier="Enthält_unter_anderem">String</isad:content>
 		</isad:scopeContent>
 		<isad:appraisalDestruction isadId="3.2" obligation="optional" origin="String">a</isad:appraisalDestruction>

@@ -44,12 +44,12 @@ xIsadg_v2.0.i: auf die zusätzlich Stufe isad:date wird verzichtet und die versch
 xIsadg_v2.0.i: auf eine Verschiebung des Elementes isad:recordReference in isad:arrangement wird verzichtet
 
 
-xIsadg_v2.0.j: isad:scope: „text, image, audio, video, structured_data, hybrid“  und Freitext 
+xIsadg_v2.0.j: isad:scope: „text, image, audio, video, structured_data, hybrid“ und Freitext 
 
 
 Protokoll No 9
 --------------
-xIsadg_v2.0.k: isad:physTech
+xIsadg_v2.0.k: isad:physTech "digital, analog, hybrid not_defined" und Freitext
 
 
 Final Version 2.0
