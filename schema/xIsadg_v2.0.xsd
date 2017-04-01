@@ -900,10 +900,15 @@
 		<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
 	</xs:complexType>
 	<xs:complexType name="propertyType" mixed="true">
+		<xs:annotation>
+			<xs:documentation>DEPRECATED: AttributePaar "key" - "value" statt "origin" (Rückwärtskompatibilität mit Version 1.6)</xs:documentation>
+		</xs:annotation>
 		<xs:sequence>
 			<xs:element name="property" type="isad:propertyValue" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="origin" type="xs:string" use="optional"/>
+		<xs:attribute name="key" use="optional"/>
+		<xs:attribute name="value" type="xs:string" use="optional"/>
 	</xs:complexType>
 	<xs:complexType name="propertyValue" mixed="true">
 		<xs:sequence>
