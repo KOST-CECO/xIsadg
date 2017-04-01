@@ -52,6 +52,12 @@ Protokoll No 9
 xIsadg_v2.0.k: isad:physTech "digital, analog, hybrid not_defined" und Freitext
 
 
+Problem Rückwärtskompatibilität
+-------------------------------
+xIsadg_v2.0.l: Attribut archivalOrigin wieder eingefügt
+xIsadg_v2.0.m: fromYear - toYear als alternative zu fromDate - toDate
+
+
 Final Version 2.0
 -----------------
 xIsadg_v2.0:   "xIsadg_v2.0: Konsolidierung, Erweiterung und Integration aller Änderungen seit Version 1.6 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.0">
-	<!--xIsadg_v2.0 (minor version l)-->
+	<!--xIsadg_v2.0 (minor version m)-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
@@ -187,6 +187,9 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:simpleContent>
+				<xs:annotation>
+					<xs:documentation>DEPRECATED: Attribute "archivalOrigin" (Rückwärtskompatibilität mit Version 1.6)</xs:documentation>
+				</xs:annotation>
 				<xs:extension base="isad:uriType">
 					<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.1"/>
 					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="inherited"/>
@@ -624,6 +627,13 @@
 			<xs:sequence>
 				<xs:element name="pointofTime" type="isad:dateType"/>
 				<xs:element name="commentDate" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+			<xs:sequence>
+				<xs:annotation>
+					<xs:documentation>DEPRECATED: Elemente Paar "fromYear" - "toYear" (Rückwärtskompatibilität mit Version 1.6)</xs:documentation>
+				</xs:annotation>
+				<xs:element name="fromYear" type="xs:gYear"/>
+				<xs:element name="toYear" type="xs:gYear"/>
 			</xs:sequence>
 		</xs:choice>
 		<xs:attribute name="obligation" type="xs:string" use="optional" fixed="aggregated"/>
