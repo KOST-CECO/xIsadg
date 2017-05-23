@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2012 rel. 2 (http://www.altova.com) by Thomas Bula (Bundesamt für Informatik und Telekommunikation) -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.0">
-	<!--xIsadg_v2.0 (minor version n)-->
+	<!--xIsadg_v2.0 (minor version o)-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
@@ -676,6 +676,9 @@
 			<xs:element ref="isad:classification" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element ref="isad:otherAccessConditions" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element ref="isad:accessConditionsNotes" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriode" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriodeConditions" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriodeNotes" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="4.1"/>
 	</xs:complexType>
@@ -741,7 +744,7 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Umfang: Identifizierung (a) des physischen Umfangs (Menge und Abmessung)</xs:documentation>
 		</xs:annotation>
-		<xs:complexType>
+		<xs:complexType mixed="true">
 			<xs:choice>
 				<xs:element name="dataSize" minOccurs="0">
 					<xs:annotation>
@@ -802,7 +805,7 @@
 	</xs:element>
 	<xs:element name="openToThePublic">
 		<xs:annotation>
-			<xs:documentation xml:lang="de">Öffentlichkeitsstatus: Angabe über die Zugänglichkeit der Verzeichnungsseinheit gemäss den geltenden Informationsfreiheits- resp. Öffentlichkeitsgesetzen</xs:documentation>
+			<xs:documentation xml:lang="de">Öffentlichkeitsstatus: Angabe über die Zugänglichkeit der Verzeichnungseinheit gemäss den geltenden Informationsfreiheits- resp. Öffentlichkeitsgesetzen</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:simpleContent>
@@ -851,6 +854,48 @@
 			<xs:simpleContent>
 				<xs:extension base="isad:stringType">
 					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="inherited"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="retentionPeriode">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Schutzfrist: Dauer der Schutzfrist in Jahren</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="obligation" type="xs:string" use="optional" default="aggregated"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="retentionPeriodeConditions">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Schutzfristenkategorie bzw. Artikel der gesetzlichen Grundlage für die Schutzfrist festhält</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="retentionPeriodeNotes">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Weiter Informationen zur Schutzfrist, z.B. Aktenzeichen des Formulars „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“, in dem die für die Ablieferung vereinbarten Schutzfristen festgehalten sind</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="isad:stringType">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
 					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
 					<xs:attribute name="origin" type="xs:string" use="optional"/>
 				</xs:extension>

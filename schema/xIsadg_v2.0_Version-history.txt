@@ -59,6 +59,12 @@ xIsadg_v2.0.m: fromYear - toYear als alternative zu fromDate - toDate
 xIsadg_v2.0.n: <isad:property key="text" value="String"/>
 
 
+Protokoll No 10
+---------------
+xIsadg_v2.0.o: //isad:extentMedium/isad:extend auch Text Element (=mixed)
+               neu: //isad:retentionPeriode, //isad:retentionPeriodeConditions und //isad:retentionPeriodeNotes
+
+
 Final Version 2.0
 -----------------
 xIsadg_v2.0:   "xIsadg_v2.0: Konsolidierung, Erweiterung und Integration aller Änderungen seit Version 1.6 
