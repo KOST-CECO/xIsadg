@@ -65,6 +65,14 @@ xIsadg_v2.0.o: //isad:extentMedium/isad:extend auch Text Element (=mixed)
                neu: //isad:retentionPeriode, //isad:retentionPeriodeConditions und //isad:retentionPeriodeNotes
 
 
+Mail vom 13.06.2017
+-------------------
+xIsadg_v2.0.p: retentionPeriode           -> retentionPeriod
+               retentionPeriodeConditions -> retentionPeriodConditions
+               retentionPeriodeNotes      -> retentionPeriodNotes
+               neu //isad:extentMedium/isad:description 
+
+
 Final Version 2.0
 -----------------
 xIsadg_v2.0:   "xIsadg_v2.0: Konsolidierung, Erweiterung und Integration aller Änderungen seit Version 1.6 

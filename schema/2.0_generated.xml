@@ -14,7 +14,7 @@
 			<isad:extent obligation="aggregated" origin="String">
 				<isad:dataSize unit="kB">1.123</isad:dataSize>
 			</isad:extent>
-			<isad:medium obligation="aggregated" origin="String">String</isad:medium>
+			<isad:medium obligation="aggregated" origin="String">Files</isad:medium>
 		</isad:extentMedium>
 	</isad:identity>
 	<isad:context isadId="2">

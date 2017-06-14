@@ -58,11 +58,14 @@
 	</isad:contentStructure>
 	<isad:conditionsAccessUse isadId="4">
 		<isad:accessConditions isadId="4.1">
-			<isad:hasPrivacyProtection obligation="aggregated" origin="String">true</isad:hasPrivacyProtection>
-			<isad:openToThePublic obligation="aggregated" origin="String">undefined</isad:openToThePublic>
-			<isad:classification obligation="aggregated" origin="String">unclassified</isad:classification>
-			<isad:otherAccessConditions obligation="optional" origin="String">a</isad:otherAccessConditions>
-			<isad:accessConditionsNotes obligation="optional" origin="String">a</isad:accessConditionsNotes>
+			<isad:hasPrivacyProtection obligation="aggregated">false</isad:hasPrivacyProtection>
+			<isad:openToThePublic obligation="aggregated">not_public</isad:openToThePublic>
+			<isad:classification obligation="aggregated">secret</isad:classification>
+			<isad:otherAccessConditions obligation="optional">eingeschränkter Zugang</isad:otherAccessConditions>
+			<isad:accessConditionsNotes obligation="optional">Die Unterlagen enthalten Informationen, welche die innere Sicherheit gefährden können</isad:accessConditionsNotes>
+			<isad:retentionPeriod obligation="optional">50</isad:retentionPeriod>
+			<isad:retentionPeriodConditions obligation="optional">Art. 11 Abs 1 BGA</isad:retentionPeriodConditions>
+			<isad:retentionPeriodNotes obligation="optional">Überwiegende öffentliche Interessen: Gefährdung der inneren und äusseren Sicherheit</isad:retentionPeriodNotes>
 		</isad:accessConditions>
 		<isad:reproConditions isadId="4.2" obligation="optional" origin="String">a</isad:reproConditions>
 		<isad:languageScripts isadId="4.3" obligation="optional" origin="String">a</isad:languageScripts>

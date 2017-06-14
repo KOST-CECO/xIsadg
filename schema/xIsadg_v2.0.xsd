@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.0">
-	<!--xIsadg_v2.0 (minor version o)-->
+	<!--xIsadg_v2.0 (minor version p)-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
@@ -656,6 +656,7 @@
 			<xs:sequence minOccurs="0">
 				<xs:element ref="isad:extent" minOccurs="0"/>
 				<xs:element ref="isad:medium" minOccurs="0"/>
+				<xs:element ref="isad:description" minOccurs="0"/>
 			</xs:sequence>
 		</xs:sequence>
 		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="1.5"/>
@@ -675,9 +676,9 @@
 			<xs:element ref="isad:classification" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element ref="isad:otherAccessConditions" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element ref="isad:accessConditionsNotes" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element ref="isad:retentionPeriode" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element ref="isad:retentionPeriodeConditions" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element ref="isad:retentionPeriodeNotes" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriod" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriodConditions" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="isad:retentionPeriodNotes" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:attribute name="isadId" type="xs:string" use="optional" fixed="4.1"/>
 	</xs:complexType>
@@ -739,11 +740,25 @@
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
+	<xs:element name="description">
+		<xs:annotation>
+			<xs:documentation xml:lang="de">Umfang als Freitext (c): wie in eCH-0160 im Element Umfang definiert, kann hier übernommen werden</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="obligation" type="xs:string" use="optional" fixed="optional"/>
+					<xs:attribute name="archivalOrigin" type="xs:boolean" use="optional"/>
+					<xs:attribute name="origin" type="xs:string" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="extent">
 		<xs:annotation>
-			<xs:documentation xml:lang="de">Umfang: Identifizierung (a) des physischen Umfangs (Menge und Abmessung)</xs:documentation>
+			<xs:documentation xml:lang="de">Umfang (a): Identifizierung des physischen Umfangs (Menge und Abmessung)</xs:documentation>
 		</xs:annotation>
-		<xs:complexType mixed="true">
+		<xs:complexType>
 			<xs:choice>
 				<xs:element name="dataSize" minOccurs="0">
 					<xs:annotation>
@@ -790,7 +805,7 @@
 	</xs:element>
 	<xs:element name="medium">
 		<xs:annotation>
-			<xs:documentation xml:lang="de">Archivalienart: Identifizierung (b) der Art des Materials der Verzeichnungseinheit</xs:documentation>
+			<xs:documentation xml:lang="de">Archivalienart (b): Identifizierung der Art des Materials der Verzeichnungseinheit</xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:simpleContent>
@@ -859,7 +874,7 @@
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="retentionPeriode">
+	<xs:element name="retentionPeriod">
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Schutzfrist: Dauer der Schutzfrist in Jahren</xs:documentation>
 		</xs:annotation>
@@ -873,7 +888,7 @@
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="retentionPeriodeConditions">
+	<xs:element name="retentionPeriodConditions">
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Schutzfristenkategorie bzw. Artikel der gesetzlichen Grundlage für die Schutzfrist festhält</xs:documentation>
 		</xs:annotation>
@@ -887,7 +902,7 @@
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="retentionPeriodeNotes">
+	<xs:element name="retentionPeriodNotes">
 		<xs:annotation>
 			<xs:documentation xml:lang="de">Weiter Informationen zur Schutzfrist, z.B. Aktenzeichen des Formulars „Meldung von Unterlagen mit besonderer Schutzfrist und öffentlich zugänglichen Unterlagen“, in dem die für die Ablieferung vereinbarten Schutzfristen festgehalten sind</xs:documentation>
 		</xs:annotation>
