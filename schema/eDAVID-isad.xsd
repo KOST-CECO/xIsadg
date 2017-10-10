@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" xmlns:rkms="Stadsarchief_Antwerpen/rkms/1.0" targetNamespace="ISADG" version="2.0" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" xmlns:rkms="Stadsarchief_Antwerpen/rkms/1.0" targetNamespace="ISADG" elementFormDefault="qualified">
 	<xs:annotation>
 		<xs:documentation xml:lang="en">
 XML Schema for ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999.
