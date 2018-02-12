@@ -80,4 +80,11 @@ xIsadg_v2.0:   "xIsadg_v2.0: Konsolidierung, Erweiterung und Integration aller Ä
                Basel-Stadt, Bern, Luzern, St.Gallen und Thurgau)"
 
 
-
+Sitzung vom 11.01.2018
+----------------------
+xIsadg_v2.1:	Konsequent englische Werteliste mit Erweiterbarkeit (Mail vom 22.1.2018)
+		xmlDataType" lax statt strict 
+		Attribut "origin" bei referenceCode auf Einfügeposition "archival" sonst "ingest"
+		"xPointer" Attribut bei isad:arrangement
+		"uri" Attribut beim primaryDatalocator und "xPointer" Attribut beim secondaryDatalocator, Verweis via Elemente Inhalt ist debrecated
+		Attribut "origin" in nested "property" nicht erlaubt - keine Änderung
