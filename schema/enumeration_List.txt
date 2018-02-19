@@ -1,0 +1,100 @@
+					<xs:enumeration value="DC"/>
+<xs:enumeration value="EAD"/>
+<xs:enumeration value="MARC"/>
+<xs:enumeration value="MODS"/>
+<xs:enumeration value="OTHER"/>
+		
+<xs:enumeration value="unclassified"/>
+<xs:enumeration value="confidential"/>
+<xs:enumeration value="secret"/>
+<xs:enumeration value="in_house"/>
+<xs:enumeration value="other"/>
+			
+<xs:enumeration value="Darin">
+<xs:enumeration value="Enthält">
+<xs:enumeration value="Enthält_unter_anderem">
+<xs:enumeration value="Enthält_vor_allem">
+<xs:enumeration value="Enthält_auch">
+<xs:enumeration value="Enthält_nur">
+			
+<xs:enumeration value="unknown"/>
+
+<xs:enumeration value="digital"/>
+<xs:enumeration value="analog"/>
+<xs:enumeration value="hybrid"/>
+<xs:enumeration value="not_defined"/>
+			
+<xs:enumeration value="Bestand">
+<xs:enumeration value="Teilbestand">
+<xs:enumeration value="Serie">
+<xs:enumeration value="Teilserie">
+<xs:enumeration value="Dossier">
+<xs:enumeration value="Teildossier">
+<xs:enumeration value="Dokument">
+<xs:enumeration value="Repräsentation">
+			
+<xs:enumeration value="undefined"/>
+<xs:enumeration value="public"/>
+<xs:enumeration value="not_public"/>
+			
+<xs:enumeration value="text"/>
+<xs:enumeration value="image"/>
+<xs:enumeration value="audio"/>
+<xs:enumeration value="video"/>
+<xs:enumeration value="structured_data"/>
+<xs:enumeration value="hybrid"/>
+					
+<xs:enumeration value="kB">
+<xs:enumeration value="MB">
+<xs:enumeration value="GB">
+<xs:enumeration value="TB">
+<xs:enumeration value="lfm">
+<xs:enumeration value="kg">
+<xs:enumeration value="m3">
+
+          
+          <xs:enumeration value="DC"/>
+					<xs:enumeration value="EAD"/>
+					<xs:enumeration value="MARC"/>
+					<xs:enumeration value="MODS"/>
+					<xs:enumeration value="OTHER"/>
+					<xs:enumeration value="unclassified"/>
+					<xs:enumeration value="confidential"/>
+					<xs:enumeration value="secret"/>
+					<xs:enumeration value="in_house"/>
+					<xs:enumeration value="other"/>
+					<xs:enumeration value="includes">
+					<xs:enumeration value="contains">
+					<xs:enumeration value="contains_inter_alia">
+					<xs:enumeration value="contains_above_all">
+					<xs:enumeration value="contains_also">
+					<xs:enumeration value="contains_exclusivley">
+		    	<xs:enumeration value="unknown"/>
+					<xs:enumeration value="digital"/>
+					<xs:enumeration value="analog"/>
+					<xs:enumeration value="hybrid"/>
+					<xs:enumeration value="not_defined"/>
+					<xs:enumeration value="fonds">
+					<xs:enumeration value="sub-fonds">
+					<xs:enumeration value="series">
+					<xs:enumeration value="sub-series">
+					<xs:enumeration value="file">
+					<xs:enumeration value="sub-file">
+					<xs:enumeration value="item">
+					<xs:enumeration value="representation">
+					<xs:enumeration value="undefined"/>
+					<xs:enumeration value="public"/>
+					<xs:enumeration value="not_public"/>
+					<xs:enumeration value="text"/>
+					<xs:enumeration value="image"/>
+					<xs:enumeration value="audio"/>
+					<xs:enumeration value="video"/>
+					<xs:enumeration value="structured_data"/>
+					<xs:enumeration value="hybrid"/>
+					<xs:enumeration value="kB">
+					<xs:enumeration value="MB">
+					<xs:enumeration value="GB">
+					<xs:enumeration value="TB">
+					<xs:enumeration value="lfm">
+					<xs:enumeration value="kg">
+					<xs:enumeration value="m3">

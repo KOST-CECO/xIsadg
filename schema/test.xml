@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2018 sp1 (http://www.altova.com) by Martin Kaiser (KOST) -->
-<isad:archivalDescription xsi:schemaLocation="ISADG test.xsd" xmlns:isad="ISADG" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<isad:secondaryDataLocator xpointer="premis">aaa</isad:secondaryDataLocator>
-</isad:archivalDescription>
