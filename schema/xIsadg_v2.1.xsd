@@ -1340,7 +1340,7 @@
 			<xs:documentation xml:lang="en">any URI, whitespace collapsed</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:anyURI">
-			<xs:minLength value="3"/>
+			<xs:minLength value="1"/>
 			<xs:whiteSpace value="collapse"/>
 		</xs:restriction>
 	</xs:simpleType>
@@ -1351,7 +1351,7 @@
 		<xs:union>
 			<xs:simpleType>
 				<xs:restriction base="xs:anyURI">
-					<xs:minLength value="3"/>
+					<xs:minLength value="1"/>
 					<xs:whiteSpace value="collapse"/>
 				</xs:restriction>
 			</xs:simpleType>

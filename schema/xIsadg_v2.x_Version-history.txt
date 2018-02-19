@@ -87,6 +87,6 @@ xIsadg_v2.1.a:	xmlDataType" processContents="lax" statt strict
 		"xPointer" Attribut bei isad:arrangement
 		"uri" Attribut beim primaryDatalocator und "xPointer" Attribut beim secondaryDatalocator, Verweis via Elemente Inhalt ist debrecated
 		Attribut "origin" in nested "property" nicht erlaubt - keine Änderung
-		"uriType" mindestens 3 Zeichen
+		"uriType" genauer definiert
 
 xIsadg_v2.1.b:	Konsequent englische Werteliste mit Erweiterbarkeit (Mail vom 22.1.2018)
