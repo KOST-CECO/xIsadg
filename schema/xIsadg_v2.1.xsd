@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 sp1 (http://www.altova.com) by Martin Kaiser (KOST) -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:isad="ISADG" targetNamespace="ISADG" elementFormDefault="qualified" version="2.1">
-	<!--xIsadg_v2.1 (minor version a)-->
+	<!--xIsadg_v2.1 (minor version c)-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
@@ -975,11 +976,13 @@
 		<xs:sequence>
 			<xs:element name="property" type="isad:propertyKeyValue" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
+		<xs:attribute name="origin" type="xs:string" use="optional"/>
 		<xs:attribute name="key" type="xs:string" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="propertyKeyValue">
 		<xs:simpleContent>
 			<xs:extension base="xs:string">
+				<xs:attribute name="origin" type="xs:string" use="optional"/>
 				<xs:attribute name="key" type="xs:string" use="required"/>
 			</xs:extension>
 		</xs:simpleContent>

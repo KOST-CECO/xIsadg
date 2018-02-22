@@ -90,3 +90,7 @@ xIsadg_v2.1.a:	xmlDataType" processContents="lax" statt strict
 		"uriType" genauer definiert
 
 xIsadg_v2.1.b:	Konsequent englische Werteliste mit Erweiterbarkeit (Mail vom 22.1.2018)
+
+xIsadg_v2.1.c:	Attribut "origin" in nested "property" erlaubt! (Protokoll vom 11.01.2018)
+
+

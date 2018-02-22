@@ -71,8 +71,8 @@
 	<isad:additionalData>
 		<isad:mdWrap obligation="optional">
 			<isad:property origin="String">
-				<isad:property key="String">
-					<isad:property key="String">String</isad:property>
+				<isad:property origin="String" key="String">
+					<isad:property origin="String"  key="String">String</isad:property>
 				</isad:property>
 			</isad:property>
 		</isad:mdWrap>
