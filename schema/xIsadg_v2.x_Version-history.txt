@@ -94,3 +94,9 @@ xIsadg_v2.1.b:	Konsequent englische Werteliste mit Erweiterbarkeit (Mail vom 22.
 xIsadg_v2.1.c:	Attribut "origin" in nested "property" erlaubt! (Protokoll vom 11.01.2018)
 
 
+Change Request 3.04.2018
+------------------------
+xIsadg_v2.1.d:	in Element adminBioHistory und arrangement muss auch ein Zeitraum angegeben werden können
+                -> mixed Element + fromDate/toDate etc.
+
+
