@@ -1,10 +1,10 @@
 
-xIsadg_v2+unbound -> xIsadg_v2.0.a (enthält source Attribut, Elemente können "unbound" wiederholt werden)
+xIsadg_v2+unbound -> xIsadg_v2.0.a (enthÃ¤lt source Attribut, Elemente kÃ¶nnen "unbound" wiederholt werden)
 ---------------------------------------------------------------------------------------------------------
 
 Protokoll No 5
 --------------
-xIsadg_v2.0.b: Attribut "source" umbenannt zu "origin" und Attribut archivalOrigin gelöscht 
+xIsadg_v2.0.b: Attribut "source" umbenannt zu "origin" und Attribut archivalOrigin gelÃ¶scht 
                Attribut "origin" fixed="archival" bei referenceCode & archivistsNote & aipReference
                Attribut "origin" default="ingest" bei descriptionLevel & descriptionDates
 
@@ -38,13 +38,13 @@ xIsadg_v2.0.h: Anpassungen: "origin" und Wiederholbarkeit nach xIsadg-Schema_201
 
 Protokoll No 8
 --------------
-xIsadg_v2.0.i: auf die zusätzlich Stufe isad:date wird verzichtet und die verschiedenen Datumsangaben 
-               im bestehenden Element isad:dates geführt (= Rückwärtskompatibilität)
+xIsadg_v2.0.i: auf die zusÃ¤tzlich Stufe isad:date wird verzichtet und die verschiedenen Datumsangaben 
+               im bestehenden Element isad:dates gefÃ¼hrt (= RÃ¼ckwÃ¤rtskompatibilitÃ¤t)
 
 xIsadg_v2.0.i: auf eine Verschiebung des Elementes isad:recordReference in isad:arrangement wird verzichtet
 
 
-xIsadg_v2.0.j: isad:scope: „text, image, audio, video, structured_data, hybrid“ und Freitext 
+xIsadg_v2.0.j: isad:scope: â€žtext, image, audio, video, structured_data, hybridâ€œ und Freitext 
 
 
 Protokoll No 9
@@ -52,9 +52,9 @@ Protokoll No 9
 xIsadg_v2.0.k: isad:physTech "digital, analog, hybrid not_defined" und Freitext
 
 
-Problem Rückwärtskompatibilität 28.03.2017
+Problem RÃ¼ckwÃ¤rtskompatibilitÃ¤t 28.03.2017
 ------------------------------------------
-xIsadg_v2.0.l: Attribut archivalOrigin wieder eingefügt
+xIsadg_v2.0.l: Attribut archivalOrigin wieder eingefÃ¼gt
 xIsadg_v2.0.m: fromYear - toYear als alternative zu fromDate - toDate
 xIsadg_v2.0.n: <isad:property key="text" value="String"/>
 
@@ -75,18 +75,18 @@ xIsadg_v2.0.p: retentionPeriode           -> retentionPeriod
 
 Final Version 2.0
 -----------------
-xIsadg_v2.0:   "xIsadg_v2.0: Konsolidierung, Erweiterung und Integration aller Änderungen seit Version 1.6 
-               im Rahmen der Arbeitsgruppe Mapping-Workshop  (Stadtarchiv Zürich und Staatsarchive Appenzell Ausserrhoden, 
+xIsadg_v2.0:   "xIsadg_v2.0: Konsolidierung, Erweiterung und Integration aller Ã„nderungen seit Version 1.6 
+               im Rahmen der Arbeitsgruppe Mapping-Workshop  (Stadtarchiv ZÃ¼rich und Staatsarchive Appenzell Ausserrhoden, 
                Basel-Stadt, Bern, Luzern, St.Gallen und Thurgau)"
 
 
 Sitzung vom 11.01.2018
 ----------------------
 xIsadg_v2.1.a:	xmlDataType" processContents="lax" statt strict 
-		Attribut "origin" bei referenceCode auf Einfügeposition "archival" sonst "ingest"
+		Attribut "origin" bei referenceCode auf EinfÃ¼geposition "archival" sonst "ingest"
 		"xPointer" Attribut bei isad:arrangement
 		"uri" Attribut beim primaryDatalocator und "xPointer" Attribut beim secondaryDatalocator, Verweis via Elemente Inhalt ist debrecated
-		Attribut "origin" in nested "property" nicht erlaubt - keine Änderung
+		Attribut "origin" in nested "property" nicht erlaubt - keine Ã„nderung
 		"uriType" genauer definiert
 
 xIsadg_v2.1.b:	Konsequent englische Werteliste mit Erweiterbarkeit (Mail vom 22.1.2018)
@@ -96,7 +96,7 @@ xIsadg_v2.1.c:	Attribut "origin" in nested "property" erlaubt! (Protokoll vom 11
 
 Change Request 3.04.2018
 ------------------------
-xIsadg_v2.1.d:	in Element adminBioHistory und arrangement muss auch ein Zeitraum angegeben werden können
+xIsadg_v2.1.d:	in Element adminBioHistory und arrangement muss auch ein Zeitraum angegeben werden kÃ¶nnen
                 -> mixed Element + fromDate/toDate etc.
 
 
