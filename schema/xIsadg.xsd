@@ -2,8 +2,12 @@
            xmlns:isad="ISADG"
            targetNamespace="ISADG"
            elementFormDefault="qualified"
-           version="2.1">
-	<!-- xIsadg_v2.1 (minor version d) -->
+           version="3.x">
+	<!-- 
+	This is the latest Version of the xIsadg (based on the Files published here).
+	It was created by duplicating version 1.6 and then progressively pasting the succeeding versions over it. (1.6 - 2.0 - 2.1 - 3.0)
+	Finally a (notepad++) XML prettyprint was applied
+	-->
 	<xs:annotation>
 		<xs:documentation xml:lang="en">isad.xsd: XML Schema based on ISAD(G): General International Standard Archival Description, Stockholm, 19-22 September 1999, represented in XML bei Filip Boudrez - eDAVID - April, 19th 2005</xs:documentation>
 	</xs:annotation>
